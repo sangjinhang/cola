@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏目录</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87CEEB; /* 天蓝色背景 */
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4682B4; /* 深蓝色 */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 2em;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px);
+        }
+        .game-link {
+            display: block;
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #00BFFF; /* 天蓝色 */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1.2em;
+        }
+        .game-link:hover {
+            background-color: #1E90FF; /* 深天蓝色 */
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+      
+        <h1>游戏目录</h1>
+    </div>
+    <div class="container">
+        <div class="game-link" onclick="redirectTo('https://sangjinhang.github.io/cola/game.html')"><strong>游戏1:</strong>单词填空</div>
+        <div class="game-link" onclick="redirectTo('https://sangjinhang.github.io/MOA/wordsgame.html')"><strong>游戏2:</strong>单词消消乐</div>
+    </div>
+</body>
+</html>
